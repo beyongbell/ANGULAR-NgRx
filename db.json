@@ -1,18 +1,18 @@
 {
-    "customers": [
-        {
-            "name":"John Doe",
-            "phone":"123123123123",
-            "address": "asdasd qw23123",
-            "membership": "Platinum",
-            "id":1
-        },
-        {
-            "name":"Tinnakorn",
-            "phone": "12312312344234",
-            "address": "wwweqweqwe",
-            "membership": "Pro",
-            "id":2
-        }
-    ]
+  "customers": [
+    {
+      "name": "John Doe",
+      "phone": "123123123123",
+      "address": "asdasd qw23123",
+      "membership": "Platinum",
+      "id": 1
+    },
+    {
+      "name": "Tinnakorn",
+      "phone": "12312312344234",
+      "address": "wwweqweqwe",
+      "membership": "Pro",
+      "id": 2
+    }
+  ]
 }
