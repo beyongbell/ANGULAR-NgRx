@@ -10,6 +10,9 @@
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td colspan="5" class="alert alert-danger" *ngIf="error$ | async as error">{{error}}</td>
+    </tr>
     <tr *ngFor="let customer of (customers$ | async)">
       <th scope="row">{{customer.name}}</th>
       <td>{{customer.phone}}</td>

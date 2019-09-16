@@ -1,39 +1,25 @@
 {
   "customers": [
     {
-      "name": "John Doe",
-      "phone": "123123123123",
-      "address": "asdasd qw23123",
-      "membership": "Platinum",
+      "name": "ๆไๆไ",
+      "phone": "ฟฟหกฟหก",
+      "address": "Cm Road",
+      "membership": "Pro",
       "id": 1
     },
     {
-      "name": "Tinnakorn",
-      "phone": "12312312344234",
-      "address": "wwweqweqwe",
+      "name": "asdwww",
+      "phone": "asdwww",
+      "address": "asdwww",
       "membership": "Pro",
       "id": 2
     },
     {
-      "name": "Tinnakorneee",
-      "phone": "asdqweeeeee",
-      "address": "Cm Roadeeee",
+      "name": "wwwwqq",
+      "phone": "wwwwwwqq",
+      "address": "wwwwwwwwqq",
       "membership": "Platinum",
       "id": 3
-    },
-    {
-      "name": "3eee",
-      "phone": "wewe",
-      "address": "wewe",
-      "membership": "Pro",
-      "id": 4
-    },
-    {
-      "name": "wwwwweee",
-      "phone": "wwwwwwwweqwe",
-      "address": "wwwwwwqwe",
-      "membership": "Platinum",
-      "id": 7
     }
   ]
 }

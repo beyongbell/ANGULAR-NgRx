@@ -3,7 +3,7 @@ import { CommonModule } from "@angular/common";
 import { RouterModule, Routes } from "@angular/router";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
-import { EffectsModule, Actions } from "@ngrx/effects";
+import { EffectsModule } from "@ngrx/effects";
 import { StoreModule } from "@ngrx/store";
 
 import { customerReducer } from "./state/customer.reducer";
