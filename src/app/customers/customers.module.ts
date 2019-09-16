@@ -3,8 +3,11 @@ import { CommonModule } from "@angular/common";
 import { RouterModule, Routes } from "@angular/router";
 import { ReactiveFormsModule, FormsModule } from "@angular/forms";
 
-import { StoreModule } from '@ngrx/store';
-import { CustomerReducer } from './state/customer.reducer';
+import { EffectsModule, Actions } from "@ngrx/effects";
+import { StoreModule } from "@ngrx/store";
+
+import { CustomerReducer } from "./state/customer.reducer";
+import { CustomerEffect } from "./state/customer.effects";
 
 import { CustomerComponent } from "./customer/customer.component";
 import { CustomerAddComponent } from "./customer-add/customer-add.component";
@@ -19,7 +22,8 @@ const customerRoutes: Routes = [{ path: "", component: CustomerComponent }];
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forChild(customerRoutes),
-    StoreModule.forFeature("customers", CustomerReducer)
+    StoreModule.forFeature("customers", CustomerReducer),
+    EffectsModule.forFeature([CustomerEffect])
   ],
   declarations: [
     CustomerComponent,
