@@ -9,21 +9,17 @@
       <th></th>
     </tr>
   </thead>
-  <!-- <tbody>
-    <tr>
-      <td colspan="5" class="alert alert-danger" *ngIf="error$ | async as error">{{error}}</td>
-    </tr>
-    <tr>
-    <tr *ngFor="let customer of (customers$ |async)">
+  <tbody>
+    <tr *ngFor="let customer of customers">
       <th scope="row">{{customer.name}}</th>
       <td>{{customer.phone}}</td>
       <td>{{customer.address}}</td>
       <td>{{customer.membership}}</td>
       <th>
-        <a (click)=editCustomer(customer)>edit</a>
+        <!-- <a (click)=editCustomer(customer)>edit</a> -->
         <br>
-        <a (click)=deleteCustomer(customer)>delete</a>
+        <!-- <a (click)=deleteCustomer(customer)>delete</a> -->
       </th>
     </tr>
-  </tbody> -->
+  </tbody>
 </table>
