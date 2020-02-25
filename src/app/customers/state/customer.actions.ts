@@ -1,8 +1,8 @@
-import { Action } from '@ngrx/store';
-
 import { Update } from '@ngrx/entity';
 
 import { Customer } from '../customer.model';
+
+import { Action } from '@ngrx/store';
 
 export enum CustomerActionTypes {
   LOAD_CUSTOMERS = '[Customer] Load Customers',
