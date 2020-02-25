@@ -1,20 +1,20 @@
-import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
-import { RouterModule, Routes } from "@angular/router";
-import { ReactiveFormsModule, FormsModule } from "@angular/forms";
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
-import { EffectsModule } from "@ngrx/effects";
-import { StoreModule } from "@ngrx/store";
+import { EffectsModule } from '@ngrx/effects';
+import { StoreModule } from '@ngrx/store';
 
-import { customerReducer } from "./state/customer.reducer";
-import { CustomerEffect } from "./state/customer.effects";
+import { customerReducer } from './state/customer.reducer';
+import { CustomerEffect } from './state/customer.effects';
 
-import { CustomerComponent } from "./customer/customer.component";
-import { CustomerAddComponent } from "./customer-add/customer-add.component";
-import { CustomerEditComponent } from "./customer-edit/customer-edit.component";
-import { CustomerListComponent } from "./customer-list/customer-list.component";
+import { CustomerComponent } from './customer/customer.component';
+import { CustomerAddComponent } from './customer-add/customer-add.component';
+import { CustomerEditComponent } from './customer-edit/customer-edit.component';
+import { CustomerListComponent } from './customer-list/customer-list.component';
 
-const customerRoutes: Routes = [{ path: "", component: CustomerComponent }];
+const customerRoutes: Routes = [{ path: '', component: CustomerComponent }];
 
 @NgModule({
   imports: [
@@ -22,7 +22,7 @@ const customerRoutes: Routes = [{ path: "", component: CustomerComponent }];
     ReactiveFormsModule,
     FormsModule,
     RouterModule.forChild(customerRoutes),
-    StoreModule.forFeature("customers", customerReducer),
+    StoreModule.forFeature('customers', customerReducer),
     EffectsModule.forFeature([CustomerEffect])
   ],
   declarations: [

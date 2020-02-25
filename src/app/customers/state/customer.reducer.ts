@@ -1,10 +1,10 @@
-import * as CustomerActions from "./customer.actions";
-import { createFeatureSelector, createSelector } from "@ngrx/store";
+import * as CustomerActions from './customer.actions';
+import { createFeatureSelector, createSelector } from '@ngrx/store';
 
-import { EntityState, EntityAdapter, createEntityAdapter } from "@ngrx/entity";
+import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';
 
-import { Customer } from "../customer.model";
-import * as fromRoot from "../../state/app-state";
+import { Customer } from '../customer.model';
+import * as fromRoot from '../../state/app-state';
 
 export interface CustomerState extends EntityState<Customer> {
   selectedCustomerId: number | null;
@@ -27,7 +27,7 @@ export const defaultCustomer: CustomerState = {
   selectedCustomerId: null,
   loading: false,
   loaded: false,
-  error: ""
+  error: ''
 };
 
 export const initialState = customerAdapter.getInitialState(defaultCustomer);
@@ -104,7 +104,7 @@ export function customerReducer(
 }
 
 const getCustomerFeatureState = createFeatureSelector<CustomerState>(
-  "customers"
+  'customers'
 );
 
 export const getCustomers = createSelector(
